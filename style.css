@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Warna dasar hitam */
+    background-color: #218838; /* Warna dasar hitam */
     color: #e0e0e0; /* Warna teks terang */
 }
 
 /* Header */
 header {
-    background-color: #1e1e1e;
+    background-color: #000000;
     color: #ffffff;
     padding: 20px;
     text-align: center;
