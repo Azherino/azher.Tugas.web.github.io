@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameShop</title>
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+                   style-src 'self'; 
+                   script-src 'self'; 
+                   img-src 'self';">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GameShop</h1>
+        <p>Tempatnya game seru!</p>
+    </header>
+
+    <main>
+        <!-- Form Sign Up -->
+        <section class="signup">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <section class="game-list">
+            <div class="game-item">
+                <h2>Game 1</h2>
+                <p>Deskripsi singkat tentang game 1.</p>
+                <p>Harga: Rp 150,000</p>
+                <button class="add-to-cart">Tambah ke Keranjang</button>
+            </div>
+            <div class="game-item">
+                <h2>Game 2</h2>
+                <p>Deskripsi singkat tentang game 2.</p>
+                <p>Harga: Rp 200,000</p>
+                <button class="add-to-cart">Tambah ke Keranjang</button>
+            </div>
+            <!-- Tambahkan game lain sesuai kebutuhan -->
+        </section>
+
+        <section class="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: Rp 0</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
